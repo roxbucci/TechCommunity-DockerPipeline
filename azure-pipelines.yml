@@ -23,7 +23,7 @@ stages:
     - task: Docker@2
       displayName: Push HelloAzureDev to ACR
       inputs:
-        containerRegistry: 'TechCommunityRegistry'
+        containerRegistry: 'AzureDevRegistry'
         repository: 'HelloAzureDev'
         command: 'buildAndPush'
         dockerfile: '**/Dockerfile'
